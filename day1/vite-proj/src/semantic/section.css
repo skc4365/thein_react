@@ -1,0 +1,13 @@
+/* In your CSS */
+.avatar {
+  border-radius: 50%;
+}
+.redcolor{
+    color: red;
+}
+.greencolor{
+    color: greenyellow;
+}
+.bluecolor{
+    color: skyblue;
+}
