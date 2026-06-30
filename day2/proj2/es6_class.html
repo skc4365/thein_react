@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Car{
+            constructor(name){
+                this.brand = name;
+            }
+
+            present(){
+                return '내 차는 ' + this.brand + ' 브랜드야';
+            }
+        }
+
+        class Model extends Car{
+            constructor(name, mod){
+                // 내 부모의 생성자를 부름.
+                super(name);
+                this.model = mod;
+            }
+            show(){
+                return this.present() + ':' + this.model;
+            }
+        }
+
+        const mycar = new Car("Ford");
+        const mycar2 = new Model("르노", "XMM3");
+        // 결과는 브라우저consol에서 확인하기 
+
+
+    </script>
+</body>
+</html>
